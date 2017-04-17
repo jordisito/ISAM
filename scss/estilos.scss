@@ -1,0 +1,424 @@
+//--------------------
+// Patron de colores
+//------------------
+$texto: #111111;
+$principal: #12AFAF;
+$secundario: #009500;
+
+html
+{
+	font-size: 15px;
+}
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	color: $texto;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	color: $texto;
+}
+
+.bienvenidos
+{
+	display: flex;
+	flex-direction: column;
+	color: #FFF;
+	//background: url("../images/proyecto1.jpg") no-repeat center top;
+	//background-size: cover;
+	height: 100vh;
+
+	& .container-fluid
+	{
+		padding-right: 0;
+		padding-left: 0;
+		margin-top: 4rem;
+	}
+
+	& .container-fluid .carousel-inner .img-fluid
+	{
+		width: 100%;
+		min-height: 91.5vh;
+	}
+	& .carousel-indicators li
+	{
+		background: #333;
+	}
+	& .carousel-indicators li.active
+	{
+		background: darkgray;
+	}
+	& .carousel-indicators
+	{
+		bottom: 5px;
+	}
+}
+
+.encabezado
+{
+	background: $texto;
+	color: #fff;
+	padding: .5rem 0;
+}
+.encabezado .container
+{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.encabezado .logo img
+{
+	width: 150px;
+	height: auto;
+}
+/*boton menu, boton buscar*/
+.boton-buscar, .boton-menu
+{
+	border: 0;
+	font-size: 2rem;
+	margin: 0;
+	padding: 0 .5rem;
+	background: transparent;
+	color: #fff;
+}
+.boton-buscar:focus, .boton-menu:focus
+{
+	outline: 0;
+}
+/*
+.boton-buscar
+{
+	margin-left: auto;
+	margin-right: .8rem;
+}
+#bloque-buscar
+{
+	flex: 1 1 100%;
+}
+.contenedor-bloque-buscar
+{
+	display: flex;
+	height: 3rem;
+	margin: 1rem 0;
+
+	& input[type="text"]
+	{
+		border: 0;
+		border-radius: 5px 0 0 5px;
+		padding: 1rem;
+		flex: 1 1 auto;
+	}
+	& input[type="submit"]
+	{
+		flex: 0 1 auto;
+		border: 0;
+		border-radius: 0 5px 5px 0;
+		background: $principal;
+		color: #fff;
+        padding: 0 1rem;
+	}
+}
+*/
+#menu-principal
+{
+	flex: 1 1 100%;
+	& ul
+	{
+		padding: 0;
+		list-style: none;
+		margin: 1rem 0 0 0;
+		& a
+		{
+			display: block;
+			padding: .8rem 0;
+			text-align: center;
+			color: #fff;
+			text-transform: uppercase;
+			border-top: 1px solid #8c8888;
+			text-decoration: none;
+		}
+	}
+	& ul a:hover, & ul li.active a
+	{
+		color: $principal;
+	}
+}
+
+/*
+.texto-encabezado
+{
+	display: flex;
+	flex: 1 1 auto;
+	align-items: center;
+}
+
+.texto-encabezado .display-4
+{
+	font-size: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.btn-primary
+{
+	color: #fff;
+	background: $principal;
+	border-color: transparent;
+	margin-top: 1rem;
+	transition: all .5s ease;
+	&:hover, &:focus, &:active:hover
+	{
+		background: $secundario;
+		border-color: transparent;
+	}
+}
+
+/*
+.flecha-bajar a
+{
+	display: inline-block;
+	color: #fff;
+	font-size: 4rem;
+	animation: flecha-animada 2s ease-in-out infinite;
+}
+@keyframes flecha-animada
+{
+	// inicio
+	from
+	{
+		transform: translateY(0);
+	}
+	50%
+	{
+		transform: translateY(6px);
+	}
+	//termine
+	to
+	{
+		transform: translateY(0);
+	}
+}
+
+*/
+// Seccion Agencia
+.agencia
+{
+	background: $principal;
+	color: #fff;
+	padding: 1.5rem 0;
+	& img
+	{
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+	}
+	& h2
+	{
+		margin-bottom: 1rem;
+	}
+}
+/*
+
+.tu-mejor-eleccion
+{
+	padding: 1rem 0;
+	& span
+	{
+		color: $principal;
+	}
+	& ul
+	{
+		list-style: none;
+		& li
+		{
+			min-height: 9rem;
+			& .contenedor-eleccion h4
+			{
+				font-size: 1.2rem;
+				font-weight: bold;
+				margin-top: .8rem;
+			}
+		}
+		& li .fa
+		{
+			display: inline-block;
+			list-style: none;
+			font-size: 2.3rem;
+			background: $secundario;
+			border-radius: 50%;
+			height: 4.5rem;
+			width: 4.5rem;
+			line-height: 4.5rem;
+			text-align: center;
+			color: #fff;
+		}
+	}
+
+}
+*/
+.mundo
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img
+	{
+		width: 100%;
+	}
+}
+
+/*
+.servicios
+{
+	color: #fff;
+	padding: 1rem 0;
+	background: url("../images/fondo-servicios.jpg") no-repeat center center;
+	background-size: cover;
+	& article
+	{
+		display: flex;
+		align-items: center;
+		margin: 1rem 0;
+	}
+	img
+	{
+		flex: 0 0 60px;
+		overflow: hidden;
+		margin-right: 1rem;
+	}
+	h3
+	{
+		margin: 0;
+		font-size: 1.1rem;
+		flex: 1 1 auto;
+		& a
+		{
+			color: #FFF;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			text-decoration: none;
+		}
+		& a::after
+		{
+			content: "\f054";
+			font-family: FontAwesome;
+			font-size: 2rem;
+			margin-left: 1rem;
+			opacity: .5;
+			position: relative;
+			left: 0;
+			transition: all .5s ease;
+		}
+		& a:hover::after
+		{
+			opacity: 1;
+			left: -.5rem;
+			color: $principal;
+		}
+	}
+}
+*/
+
+// ultimos proyectos
+.ultimos-proyectos
+{
+  padding: 1rem 0;
+  & a
+  {
+	  text-decoration: none;
+    & h4
+    {
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      color: $texto;
+		height: 2.3rem;
+    }
+  }
+
+	& .container
+	{
+		padding-left: 0;
+		padding-right: 0;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	& .container h2
+	{
+		color: $texto;
+		margin-bottom: 1rem;
+	}
+
+  & .owl-nav
+  {
+    display: flex;
+    justify-content: center;
+    margin: .3rem 0;
+  }
+  & .owl-prev, & .owl-next
+  {
+    font-size: 3rem;
+    margin: 0 .5rem;
+    color: $principal;
+    transition: all .5s ease;
+  }
+  & .owl-prev:hover, & .owl-next:hover
+  {
+    color: $secundario;
+  }
+}
+// pie de pagina
+.pie-de-pagina
+{
+  font-size: .9rem;
+  text-align: center;
+  padding: 1rem 0;
+  color: #fff;
+  background: $texto;
+
+  & .redes-sociales
+  {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    list-style: none;
+
+    & a
+    {
+      color: #fff;
+      font-size: 2rem;
+      margin: 0 .5rem;
+      opacity: .7;
+      transition: all .5s ease;
+
+      &:hover
+      {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/*
+.ir-arriba
+{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  color: $principal;
+  text-decoration: none;
+  z-index: 99999;
+  line-height:0;
+  transition: all .5s ease;
+
+  &:hover, &:focus
+  {
+    outline: none;
+    color: #fff;
+  }
+}
+*/
