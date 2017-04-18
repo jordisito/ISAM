@@ -33,13 +33,17 @@ h1,h2,h3,h4,h5,h6
 	{
 		padding-right: 0;
 		padding-left: 0;
-		margin-top: 4rem;
+
+		& .carousel-inner .img-fluid
+		{
+			width: 0;
+		}
 	}
 
 	& .container-fluid .carousel-inner .img-fluid
 	{
 		width: 100%;
-		min-height: 91.5vh;
+		min-height: 100vh;
 	}
 	& .carousel-indicators li
 	{
@@ -376,4 +380,103 @@ h1,h2,h3,h4,h5,h6
 			}
 		}
 	}
+
+	// servicios
+	.servicios
+	{
+		& article
+		{
+			flex-direction: column;
+			margin: 1rem 0;
+			align-items: center;
+			text-align: center;
+
+			&:hover img
+			{
+				transform: rotateY(360deg);
+				transform-style: preserve-3d;
+			}
+		}
+		& img
+		{
+			flex: 0 0 160px;
+			margin-right: 0;
+			margin-bottom: 1rem;
+			overflow: hidden;
+			transition: all 1s ease;
+		}
+		& h3
+		{
+			margin: 0 0 .5rem 0;
+			font-size: 1.5rem;
+			flex: 0 1 auto;
+			& a::after
+			{
+				content: "";
+			}
+		}
+
+		.btn-secondary
+		{
+			margin-top: auto;
+		}
+	}
+} // fin de media querys para tables
+
+@media screen and (min-width: 992px)
+{
+	html
+	{
+		font-size: 16px;
+	}
+
+	.tu-mejor-eleccion
+	{
+		&  ul li
+		{
+			display: flex;
+			min-height: 7rem;
+			& .fa
+			{
+				text-align: center;
+				flex: 0 1 auto;
+				margin-right: 1rem;
+				transition: all 1s ease;
+			}
+			&:hover .fa
+			{
+				transform: rotateY(360deg);
+				transform-style: preserve-3d;
+				background: $principal;
+			}
+			& p
+			{
+				font-size: .85rem;
+			}
+		}
+
+		& .contenedor-eleccion
+		{
+			flex: 1 0 0px;
+		}
+		& ul li .contenedor-eleccion h4
+		{
+			margin-top: 0;
+			font-size: 1rem;
+		}
+		& ul:first-child .fa
+		{
+			order: 1;
+			margin-left: 1rem;
+			margin-right: 0;
+		}
+	}
+	.mundo img
+	{
+		margin-bottom: 5rem;
+	}
 }
+
+
+
+
