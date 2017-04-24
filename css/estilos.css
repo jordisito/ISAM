@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-direction: column;
   flex-direction: column;
   color: #FFF;
-  background: url("../images/fondo-encabezado.jpg") no-repeat center top;
+  background: url("../images/fondo2.jpg") no-repeat center top;
   background-size: cover;
   height: 100vh; }
   .bienvenidos .container-fluid {
@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
 .servicios {
   color: #fff;
   padding: 1rem 0;
-  background: url("../images/fondo-servicios.jpg") no-repeat center center;
+  background: url("../images/fondo1.jpg") no-repeat center center;
   background-size: cover; }
   .servicios article {
     display: -webkit-flex;
@@ -307,6 +307,46 @@ h1, h2, h3, h4, h5, h6 {
 .paginas-internas #accordion .card {
   margin: .2rem 0; }
 
+.paginas-internas .lista-servicios {
+  background: #009500;
+  padding: 1rem 0; }
+  .paginas-internas .lista-servicios .item-servicios {
+    background: #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+    border: 5px solid #066906; }
+    .paginas-internas .lista-servicios .item-servicios a {
+      border: none;
+      transition: all .8s ease; }
+      .paginas-internas .lista-servicios .item-servicios a:hover {
+        background: #009500; }
+    .paginas-internas .lista-servicios .item-servicios .contenedor {
+      padding: 1rem; }
+      .paginas-internas .lista-servicios .item-servicios .contenedor a {
+        display: block;
+        border-radius: 2px; }
+    .paginas-internas .lista-servicios .item-servicios img {
+      width: 100%;
+      transition: all .8s ease; }
+      .paginas-internas .lista-servicios .item-servicios img:hover {
+        box-shadow: -1px 4px 30px 0px rgba(50, 50, 50, 0.75); }
+    .paginas-internas .lista-servicios .item-servicios h4 {
+      margin-top: .5rem; }
+    .paginas-internas .lista-servicios .item-servicios:hover .fa {
+      -webkit-transform: rotateY(360deg);
+      transform: rotateY(360deg);
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d; }
+    .paginas-internas .lista-servicios .item-servicios .fa {
+      font-size: 6rem;
+      color: #12AFAF;
+      margin-bottom: 1rem;
+      transition: all 1s ease; }
+
+.img-servicios {
+  width: 200px;
+  margin: 0 1rem; }
+
 @media screen and (min-width: 768px) {
   #menu-principal {
     height: auto !important;
@@ -361,7 +401,23 @@ h1, h2, h3, h4, h5, h6 {
     .servicios h3 a::after {
       content: ""; }
   .servicios .btn-secondary {
-    margin-top: auto; } }
+    margin-top: auto; }
+  /*pagina servicios*/
+  .paginas-internas .lista-servicios {
+    padding: 1rem; }
+    .paginas-internas .lista-servicios .col-md-4 {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    .paginas-internas .lista-servicios .item-servicios {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .paginas-internas .lista-servicios .item-servicios .btn-primary {
+        margin-top: auto; } }
 
 @media screen and (min-width: 992px) {
   html {

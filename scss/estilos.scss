@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5,h6
 	display: flex;
 	flex-direction: column;
 	color: #FFF;
-	background: url("../images/fondo-encabezado.jpg") no-repeat center top;
+	background: url("../images/fondo2.jpg") no-repeat center top;
 	//background: url("../images/proyecto1.jpg") no-repeat center top;
 	//background-size: cover;
 	background-size: cover;
@@ -211,7 +211,7 @@ h1,h2,h3,h4,h5,h6
 {
 	color: #fff;
 	padding: 1rem 0;
-	background: url("../images/fondo-servicios.jpg") no-repeat center center;
+	background: url("../images/fondo1.jpg") no-repeat center center;
 	background-size: cover;
 	& article
 	{
@@ -414,7 +414,80 @@ h1,h2,h3,h4,h5,h6
 	}
 }
 
+// Estilos pagina servicios
+.paginas-internas
+{
+	.lista-servicios
+	{
+		background: $secundario;
+		padding: 1rem 0;
 
+		& .item-servicios
+		{
+			background: #ffffff;
+			text-align: center;
+			margin-bottom: 1rem;
+			//padding: 1rem;
+			border: 5px solid #066906;
+
+			& a 
+			{
+				border: none;
+				transition: all .8s ease;
+				&:hover
+					{
+						background: $secundario;
+					}
+			}
+
+			& .contenedor
+			{
+				padding: 1rem;
+				& a
+				{
+					display: block;
+					border-radius: 2px;
+				}
+			}
+			& img
+			{
+				width: 100%;
+				transition: all .8s ease;
+				&:hover
+				{
+					box-shadow: -1px 4px 30px 0px rgba(50, 50, 50, 0.75);
+				}
+			}
+
+			& h4
+			{
+				margin-top: .5rem;
+			}
+
+			&:hover .fa
+			{
+				transform: rotateY(360deg);
+				transform-style: preserve-3d;
+			}
+
+			& .fa
+			{
+				font-size: 6rem;
+				color: $principal;
+				margin-bottom: 1rem;
+				transition: all 1s ease;
+			}
+		}
+	}
+
+
+}
+
+.img-servicios
+{
+	width: 200px;
+	margin: 0 1rem;
+}
 // comienzan los media querys
 //--------------------------------
 
@@ -484,11 +557,34 @@ h1,h2,h3,h4,h5,h6
 			}
 		}
 
-		.btn-secondary
+		& .btn-secondary
 		{
 			margin-top: auto;
 		}
 	}
+
+	/*pagina servicios*/
+	.paginas-internas .lista-servicios
+	{
+		padding: 1rem;
+		& .col-md-4
+		{
+			display: flex;
+		}
+
+		& .item-servicios
+		{
+			display: flex;
+			flex-direction: column;
+
+			& .btn-primary
+			{
+				margin-top: auto;
+			}
+		}
+	}
+
+
 } // fin de media querys para tables
 
 @media screen and (min-width: 992px)
