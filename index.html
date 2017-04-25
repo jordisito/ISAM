@@ -12,6 +12,7 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
@@ -83,7 +84,7 @@
    <section class="agencia" id="agencia">
     <div class="container">
       <div class="row">
-         <div class="col-12 col-md-8 col-xl-9">
+         <div class="col-12 col-md-8 col-xl-9 wow bounceIn" data-wow-delay=".3s"">
             <h2 class="h3 text-center text-md-center font-weight-bold"> Servicios de Consultoría y Gestión de Tecnologías de la Información</h2>
             <p>
                 Somos una empresa de Servicios de Consultoría y Gestión de Tecnologías de la Información orientada a la calidad y al compromiso
@@ -95,7 +96,7 @@
             </p>
          </div>
          <div class="col-12 col-md-4 col-xl-3">
-            <img src="images/agencia.svg" alt="agencia">
+            <img src="images/agencia.svg" alt="agencia" class="wow bounceIn" data-wow-delay=".6s">
          </div>
       </div>
     </div>
@@ -108,21 +109,21 @@
 
            <div class="row">
              <ul class="col-6 col-lg-4 text-center text-lg-left">
-                <li>
+                <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".3s">
                    <i class="fa fa-briefcase" aria-hidden="true"></i>
                    <div class="contenedor-eleccion">
                       <h4>Marketing Digital</h4>
                       <p class="hidden-md-down">Para empresa que requiere ampliar sus plataformas de gestion.</p>
                    </div>
                 </li>
-                <li>
+                <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".7s">
                    <i class="fa fa-laptop" aria-hidden="true"></i>
                    <div class="contenedor-eleccion">
                       <h4>Desarrollo de Software</h4>
                       <p class="hidden-md-down">Para empresa que requiere ampliar sus plataformas de gestion.</p>
                    </div>
                 </li>
-                <li>
+                <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay="1.1s">
                    <i class="fa fa-mobile-phone" aria-hidden="true"></i>
                    <div class="contenedor-eleccion">
                       <h4>Desarrollo Diseño de Apps</h4>
@@ -136,21 +137,21 @@
              </div>
 
              <ul class="col-6 col-lg-4 text-center text-lg-right">
-                <li>
+                <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".5s">
                    <i class="fa fa-code" aria-hidden="true"></i>
                    <div class="contenedor-eleccion">
                       <h4>Desarrollo Diseño Web</h4>
                       <p class="hidden-md-down">Para empresa que requiere ampliar sus plataformas de gestion.</p>
                    </div>
                 </li>
-                <li>
+                <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".9s">
                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
                    <div class="contenedor-eleccion">
                       <h4>Colsultoria TI</h4>
                       <p class="hidden-md-down">Para empresa que requiere ampliar sus plataformas de gestion.</p>
                    </div>
                 </li>
-                <li>
+                <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay="1.3s">
                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
                    <div class="contenedor-eleccion">
                       <h4>Diseño Personalizado</h4>
@@ -167,7 +168,7 @@
          <h2 class="text-center font-weight-bold">Nuestros Servicios</h2>
 
          <div class="row">
-            <article class="col-md-3">
+            <article class="col-md-3 wow bounceInLeft" data-wow-delay=".3s">
                <img src="images/servicio-1.svg" alt="servicio desarrollo de aplicaciones moviles">
                <h3>
                   <a href="pdf/Servicio_1.pdf" target="_blank">Desarrollo de Software</a>
@@ -178,7 +179,7 @@
                <a href="pdf/Servicio_1.pdf" target="_blank" class="btn btn-secondary hidden-sm-down">Más informacion</a>
             </article>
 
-            <article class="col-md-3">
+             <article class="col-md-3 wow bounceInUp" data-wow-delay=".5s">
                <img src="images/servicio-2.svg" alt="consultoria tecnologica">
                <h3>
                   <a href="pdf/Servicio_2.pdf" target="_blank">Desarrollo de Aplicaciones</a>
@@ -189,7 +190,7 @@
                <a href="pdf/Servicio_2.pdf" target="_blank" class="btn btn-secondary hidden-sm-down">Más informacion</a>
             </article>
 
-            <article class="col-md-3">
+             <article class="col-md-3 wow bounceInUp" data-wow-delay=".5s">
                <img src="images/servicio-3.svg" alt="Marketing y publicidad movil">
                <h3>
                   <a href="pdf/Servicio_3.pdf" target="_blank">Consultoria Especializada</a>
@@ -200,7 +201,7 @@
                <a href="pdf/Servicio_3.pdf" target="_blank" class="btn btn-secondary hidden-sm-down">Más informacion</a>
             </article>
 
-             <article class="col-md-3">
+              <article class="col-md-3 wow bounceInRight" data-wow-delay=".3s">
                  <img src="images/servicio-1.svg" alt="Marketing y publicidad movil">
                  <h3>
                      <a href="pdf/Servicio_4.pdf" target="_blank">Outsourcing Empresas</a>
@@ -268,11 +269,11 @@
       </div>
    </footer>
 
-        <!--
-   <a href="#" class="ir-arriba"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
--->
+   <a data-scroll href="#encabezado" class="ir-arriba">
+    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+   </a>
 
-  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
   <script src="js/tether.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -303,5 +304,9 @@
             }
         });
     </script>
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/sitio.js"></script>
   </body>
 </html>

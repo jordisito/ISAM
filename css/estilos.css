@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFF;
   background: url("../images/fondo2.jpg") no-repeat center top;
   background-size: cover;
+  background-attachment: fixed !important;
   height: 100vh; }
   .bienvenidos .container-fluid {
     padding-right: 0;
@@ -155,7 +156,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding: 1rem 0;
   background: url("../images/fondo1.jpg") no-repeat center center;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed !important; }
   .servicios article {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -272,7 +274,8 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   z-index: 99999;
   line-height: 0;
-  transition: all .5s ease; }
+  transition: all .5s ease;
+  display: none; }
   .ir-arriba:hover, .ir-arriba:focus {
     outline: none;
     color: #fff; }
@@ -342,6 +345,19 @@ h1, h2, h3, h4, h5, h6 {
       color: #12AFAF;
       margin-bottom: 1rem;
       transition: all 1s ease; }
+
+.pagina-contacto {
+  padding: 1rem 0; }
+  .pagina-contacto h2 {
+    margin: 0 0 1rem 0; }
+  .pagina-contacto .btn.btn-primary {
+    border: none;
+    background: #12AFAF;
+    transition: all .5s ease; }
+    .pagina-contacto .btn.btn-primary:hover {
+      background: #009500; }
+  .pagina-contacto .btn {
+    cursor: pointer; }
 
 .img-servicios {
   width: 200px;
