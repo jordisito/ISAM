@@ -38,7 +38,12 @@ h1, h2, h3, h4, h5, h6 {
 .encabezado {
   background: #111111;
   color: #fff;
-  padding: .5rem 0; }
+  padding: .5rem 0;
+  transition: all .5s ease; }
+
+.encabezado.fondo-menu {
+  background: #0f6077;
+  padding: 1rem 0; }
 
 .encabezado .container {
   display: -webkit-flex;
@@ -311,13 +316,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: .2rem 0; }
 
 .paginas-internas .lista-servicios {
-  background: #009500;
   padding: 1rem 0; }
   .paginas-internas .lista-servicios .item-servicios {
     background: #ffffff;
     text-align: center;
     margin-bottom: 1rem;
-    border: 5px solid #066906; }
+    border: 1px solid #DDD;
+    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.5); }
     .paginas-internas .lista-servicios .item-servicios a {
       border: none;
       transition: all .8s ease; }
@@ -345,6 +350,53 @@ h1, h2, h3, h4, h5, h6 {
       color: #12AFAF;
       margin-bottom: 1rem;
       transition: all 1s ease; }
+  .paginas-internas .lista-servicios .btn-primary {
+    background: #12AFAF; }
+
+.article-lista-cursos {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .article-lista-cursos .contenedor-curso {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: 1px solid #DDD;
+    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.5);
+    margin: 1rem 0; }
+    .article-lista-cursos .contenedor-curso img {
+      width: 100%;
+      height: 100%; }
+    .article-lista-cursos .contenedor-curso .titulo-curso {
+      font-size: 15px;
+      font-weight: bold;
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      display: block;
+      margin-bottom: .3rem;
+      margin-top: .8rem;
+      padding: 0 1rem; }
+    .article-lista-cursos .contenedor-curso .duracion-curso {
+      padding: 0 1rem;
+      font-size: .8rem;
+      font-style: italic;
+      color: #555; }
+    .article-lista-cursos .contenedor-curso .ver-mas {
+      font-size: 1.1rem;
+      border: none;
+      background: #12AFAF;
+      transition: all .5s ease;
+      margin-top: auto;
+      color: #fff;
+      cursor: pointer; }
+      .article-lista-cursos .contenedor-curso .ver-mas:hover {
+        background: #009500;
+        color: #fff; }
+  .article-lista-cursos .btn {
+    border-radius: 0; }
 
 .pagina-contacto {
   padding: 1rem 0; }
@@ -362,6 +414,107 @@ h1, h2, h3, h4, h5, h6 {
 .img-servicios {
   width: 200px;
   margin: 0 1rem; }
+
+/*ecommerce*/
+.titulo-ecommerce {
+  font-size: 2.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.625rem;
+  margin-top: 2rem;
+  color: #0D76AD;
+  font-weight: normal;
+  text-transform: capitalize; }
+
+section.ecommerce h3 {
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+  color: #0D76AD;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid #ccc; }
+
+ul.modulo {
+  padding-left: 0; }
+
+/*
+ul.modulo > li:first-child
+{
+  font-weight: bold;
+}
+*/
+.contenido-ecommerce p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 2rem; }
+
+ul.modulo li, .contenido-ecommerce p {
+  font-family: 'Open Sans'; }
+
+ul.lista {
+  padding-left: .9rem;
+  font-family: Arial, sans-serif;
+  font-family: 'Open Sans'; }
+
+ul.lista li {
+  list-style: disc; }
+
+p small i {
+  font-size: 2rem;
+  padding: .6rem .6rem; }
+
+i.fa.fa-hourglass-start {
+  margin-left: .6rem; }
+
+.tema {
+  margin-bottom: 2rem; }
+
+.bak {
+  margin-bottom: .6rem; }
+
+ul.modulo, .mod {
+  line-height: 1.5rem; }
+
+ul.lista li.tema ul li {
+  list-style-type: circle; }
+
+ul.lista li.bak ul li {
+  line-height: 1.5rem; }
+
+ul.lista li.tema ul li ul li {
+  list-style-type: square; }
+
+ul.lista li.bak {
+  list-style-type: decimal; }
+
+/*boton calendario*/
+a.btn.btn-primary.calendar {
+  font-size: 150%;
+  color: white;
+  background: black;
+  font-weight: bold;
+  width: 100%; }
+
+a.btn.btn-secondary.inscribirme {
+  border: 1px solid #fff;
+  background: lightgray;
+  color: #111;
+  font-family: 'Open Sans', sans-serif; }
+
+p.parrafo-calendario {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 50px; }
+
+table.table.table-responsive {
+  font-family: 'Open Sans', sans-serif; }
+
+thead.thead-default {
+  background: rgba(214, 189, 189, 0.23); }
+
+div.item img {
+  min-height: 65vh;
+  max-width: 100%; }
 
 @media screen and (min-width: 768px) {
   #menu-principal {
